@@ -43,7 +43,7 @@ unless @settings.jruby?
 Ex:
 
 jruby: http://jruby.org.s3.amazonaws.com/downloads/1.7.12/jruby-complete-1.7.12.jar
-jetty: http://dist.codehaus.org/jetty/jetty-hightide-8.1.15/jetty-hightide-8.1.15.v20140411.zip
+jetty: http://eclipse.org/downloads/download.php?file=/jetty/9.1.4.v20140401/dist/jetty-distribution-9.1.4.v20140401.zip
   })
 end
 

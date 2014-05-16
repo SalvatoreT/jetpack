@@ -12,8 +12,8 @@ describe "jetpack - reloading" do
   end
 
   it "uses reloading SSL" do
-    File.exists?("spec/sample_projects/webapp_reloading/vendor/jetty/jetty.xml").should be_true
-    File.read("spec/sample_projects/webapp_reloading/vendor/jetty/jetty.xml").should include("class=\"jetpack.ssl.ReloadingSslContextFactory\"")
+    File.exists?("spec/sample_projects/webapp_reloading/vendor/jetty/etc/jetty-ssl.xml").should be_true
+    File.read("spec/sample_projects/webapp_reloading/vendor/jetty/etc/jetty-ssl.xml").should include("class=\"jetpack.ssl.ReloadingSslContextFactory\"")
   end
 
   # TODO (@sul3n3t) - these tests don't currently work, and were not being run because of incorrect file extension :(
