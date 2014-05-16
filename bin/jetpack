@@ -110,6 +110,7 @@ def install_jetty(vendor_dir)
   rm File.join(vendor_dir, "jetty.zip")
   mv Dir["#{vendor_dir}/jetty*"].to_a.first, jetty_dir
   rm_rf "#{jetty_dir}/webapps"
+  rm_rf "#{jetty_dir}/start.d"
   jetty_dir
 end
 
