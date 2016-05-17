@@ -23,8 +23,8 @@ namespace :spec do
 
     FileUtils.mkdir_p 'spec/local_mirror' unless File.directory?('spec/local_mirror')
 
-    local_mirror 'http://jruby.org.s3.amazonaws.com/downloads/1.7.19/jruby-complete-1.7.19.jar'
-    local_mirror 'http://download.eclipse.org/jetty/9.2.9.v20150224/dist/jetty-distribution-9.2.9.v20150224.zip'
-    local_mirror 'http://central.maven.org/maven2/org/jruby/rack/jruby-rack/1.1.18/jruby-rack-1.1.18.jar'
+    local_mirror 'https://s3.amazonaws.com/jruby.org/downloads/9.1.0.0/jruby-complete-9.1.0.0.jar'
+    local_mirror 'http://download.eclipse.org/jetty/stable-9/dist/jetty-distribution-9.3.8.v20160314.zip'
+    local_mirror 'http://central.maven.org/maven2/org/jruby/rack/jruby-rack/1.1.20/jruby-rack-1.1.20.jar'
   end
 end
