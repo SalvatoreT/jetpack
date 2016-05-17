@@ -48,7 +48,7 @@ Some other settings you might care about:
     http_port: 4080
     https_port: 4443
     max_threads: 50
-    ruby_version: 1.8
+    ruby_version: 2.3
     app_type: rack
     keystore_type: JCEKS
     keystore: /data/app/secrets/mystore.jceks

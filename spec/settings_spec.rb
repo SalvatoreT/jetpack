@@ -31,7 +31,7 @@ describe Jetpack::Settings do
       end
 
       it 'sets ruby_version' do
-        expect(subject.ruby_version).to eq(1.9)
+        expect(subject.ruby_version).to eq(2.3)
       end
 
       it 'sets app_type' do

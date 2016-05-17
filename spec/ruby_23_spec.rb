@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe 'jetpack - bundler and gems in 1.9 mode' do
+describe 'jetpack - bundler and gems in 2.3 mode' do
   before(:all) do
     reset
-    @project = 'has_gems_via_bundler_19'
+    @project = 'has_gems_via_bundler_23'
     rm_rf("spec/sample_projects/#{@project}/vendor/bundle")
     rm_rf("spec/sample_projects/#{@project}/vendor/gems")
     x!("bin/jetpack spec/sample_projects/#{@project}")
