@@ -30,10 +30,6 @@ describe Jetpack::Settings do
         expect(subject.max_threads).to eq(50)
       end
 
-      it 'sets ruby_version' do
-        expect(subject.ruby_version).to eq(2.3)
-      end
-
       it 'sets app_type' do
         expect(subject.app_type).to eq('rails')
       end

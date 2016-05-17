@@ -17,7 +17,7 @@ module Jetpack
         'java'                       => 'java',
         'java_options'               => '-Xmx2048m',
         'max_threads'                => 50,
-        'ruby_version'               => 2.3,
+        'ruby_version'               => 2.0,
         'app_type'                   => 'rails',
         'environment'                => nil,
         'keystore_type'              => 'PKCS12',

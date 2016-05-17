@@ -55,10 +55,9 @@ script_start_time = Time.now
 @jar_build_options = @settings.java_options.gsub(/(\s*)-Xms\S+/, '\1')
 
 @java_dash_jar = "GEM_HOME=#{@gem_home} exec #{@settings.java} #{@jar_build_options} -jar"
-@jruby_opts = "--#{@settings.ruby_version}"
 
 def jruby!(cmd)
-  x!("cd #{@path_to_project} && #{@java_dash_jar} #{@jruby_jar_file} #{@jruby_opts} #{cmd}")
+  x!("cd #{@path_to_project} && #{@java_dash_jar} #{@jruby_jar_file} #{cmd}")
 end
 
 def download(url, local_file)
